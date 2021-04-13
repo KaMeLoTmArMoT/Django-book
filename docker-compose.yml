@@ -4,6 +4,9 @@ services:
   web:
     build: .
     command: python /PRO/manage.py runserver 0.0.0.0:8000
+    environment:
+      - SECRET_KEY=1gcc%$$$$q_pp)l)3evch=!x3luu4$$-uaa93y9tbidqn_cqtvtvj
+      - DEBUG=1
     volumes:
       - .:/PRO
     ports:
